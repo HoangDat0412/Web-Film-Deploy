@@ -1,0 +1,76 @@
+ul.dropdown_menu {
+  background-color: rgba(15, 15, 15);
+  color: #abb7c4;
+}
+ul.dropdown_menu li a {
+  transition: all 0.3s;
+  font-size: 14px;
+  padding: 7px 25px;
+  color: #abb7c4;
+  &:hover {
+    cursor: pointer;
+    background: transparent;
+    color: rgb(255, 150, 88);
+  }
+}
+
+ul.dropdown_menu > li:hover > ul.submenu {
+  z-index: 100;
+  display: block;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.arrow-down {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.arrow-right {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #fff;
+}
+
+.loading-search {
+  animation: spin 1s linear infinite;
+  position: absolute;
+  color: #ccc;
+  top: 50%;
+  right: 45px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+.form-control {
+  font-size: 0.9rem;
+  padding-right: 1.3rem;
+}
+
+.dropdown-search {
+  position: absolute;
+  top: 40px;
+  z-index: 999;
+}
+
+.navbar > .container-fluid {
+  justify-content: flex-start;
+}
+
+#navbarNav {
+  width: 100%;
+  justify-content: space-between;
+}

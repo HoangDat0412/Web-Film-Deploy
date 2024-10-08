@@ -1,0 +1,14 @@
+@media screen and (max-width:576px){
+    footer{
+        .columenu{
+            flex-direction: row !important;
+          }
+    }
+}
+
+footer ul li a {
+    cursor: pointer;
+}
+footer ul li{
+    list-style: none;
+}
